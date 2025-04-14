@@ -1,0 +1,22 @@
+{
+  "name": "arch container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": []
+    }
+  },
+  "runArgs": [
+    "--privileged"
+  ],
+}
+d",
+    "--device=/dev/kvm:/dev/kvm"
+  ],
+  "postCreateCommand": "[ -e /dev/kvm ] && echo 'KVM disponível!' || echo 'KVM não encontrado.'"
+}
