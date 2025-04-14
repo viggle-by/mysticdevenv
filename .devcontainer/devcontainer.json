@@ -11,6 +11,5 @@
       "extensions": []
     }
   },
-    "overrideCommand": false,
     "--privileged": true
 }
