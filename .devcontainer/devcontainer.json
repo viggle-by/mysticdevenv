@@ -11,8 +11,6 @@
       "extensions": []
     }
   },
-  "runArgs": [
     "overrideCommand": false,
     "--privileged": true
-  ],
 }
