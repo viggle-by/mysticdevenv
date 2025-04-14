@@ -13,4 +13,4 @@ USER user
 WORKDIR /home/user
 FROM  mcr.microsoft.com/devcontainers/base:jammy
 
-CMD ["/lib/systemd/systemd", "--system", "--unit=basic.target"]
+CMD ["/sbin/init"]
