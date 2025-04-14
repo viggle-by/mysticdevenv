@@ -15,8 +15,3 @@
     "--privileged"
   ],
 }
-d",
-    "--device=/dev/kvm:/dev/kvm"
-  ],
-  "postCreateCommand": "[ -e /dev/kvm ] && echo 'KVM disponível!' || echo 'KVM não encontrado.'"
-}
