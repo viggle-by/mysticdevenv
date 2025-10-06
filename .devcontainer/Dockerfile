@@ -7,6 +7,6 @@ RUN pacman -Sy --noconfirm \
     vim \
     && pacman -Scc --noconfirm
 
-RUN useradd -m -s /bin/bash user && echo "user ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && echo "user:root" | chpasswd
-USER user
-WORKDIR /home/user
+RUN useradd -m -s /bin/bash mysticgiggle && echo "mysticgiggle ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && echo "mysticgiggle:root" | chpasswd
+USER mysticgiggle
+WORKDIR /home/mysticgiggle
